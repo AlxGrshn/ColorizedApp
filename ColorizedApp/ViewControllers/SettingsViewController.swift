@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SettingsViewController: UIViewController {
     
     @IBOutlet var colorView: UIView!
     
@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        navigationItem.hidesBackButton = true
         colorView.layer.cornerRadius = 20
         changeColorView()
         setValue()
