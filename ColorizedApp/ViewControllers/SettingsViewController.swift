@@ -19,10 +19,21 @@ class SettingsViewController: UIViewController {
     @IBOutlet var greenSlider: UISlider!
     @IBOutlet var blueSlider: UISlider!
     
+    var redValue: Float!
+    var greenValue: Float!
+    var blueValue: Float!
+    
+    var delegate: SettingsViewControllerDelegate!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-//        navigationItem.hidesBackButton = true
+        redSlider.value = redValue
+        greenSlider.value = greenValue
+        blueSlider.value = blueValue
+        
+        navigationItem.hidesBackButton = true
         colorView.layer.cornerRadius = 20
+        
         changeColorView()
         setValue()
     }
@@ -36,6 +47,16 @@ class SettingsViewController: UIViewController {
         }
     }
     
+    
+    @IBAction func doneButtonPressed() {
+        delegate.setNewColor(
+            redColor: redSlider.value,
+            greenColor: greenSlider.value,
+            blueColor:  blueSlider.value
+        )
+    }
+    
+       
     private func changeColorView() {
         colorView.backgroundColor = UIColor(
             red: CGFloat(redSlider.value),

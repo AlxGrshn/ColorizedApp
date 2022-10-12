@@ -16,12 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="a2f-t2-uqR"/>
-                        <color key="backgroundColor" systemColor="systemGray3Color"/>
                     </view>
                     <navigationItem key="navigationItem" id="V4a-Rm-k8p">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="command" catalog="system" id="N83-wF-FX7">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="dial.low" catalog="system" id="N83-wF-FX7">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" id="VCj-TM-XSo"/>
+                                <segue destination="BYZ-38-t0r" kind="show" identifier="" id="VCj-TM-XSo"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -131,6 +130,9 @@
                                 <rect key="frame" x="120" y="432" width="80" height="34.5"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="DONE"/>
+                                <connections>
+                                    <action selector="doneButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="u80-MB-eyD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -182,7 +184,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="command" catalog="system" width="128" height="115"/>
+        <image name="dial.low" catalog="system" width="128" height="109"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
