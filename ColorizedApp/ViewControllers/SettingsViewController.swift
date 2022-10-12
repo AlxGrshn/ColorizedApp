@@ -54,6 +54,7 @@ class SettingsViewController: UIViewController {
             greenColor: greenSlider.value,
             blueColor:  blueSlider.value
         )
+        dismiss(animated: true)
     }
     
        

@@ -20,7 +20,7 @@
                     <navigationItem key="navigationItem" id="V4a-Rm-k8p">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="dial.low" catalog="system" id="N83-wF-FX7">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" identifier="" id="VCj-TM-XSo"/>
+                                <segue destination="BYZ-38-t0r" kind="presentation" identifier="" modalPresentationStyle="fullScreen" id="VCj-TM-XSo"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -38,14 +38,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uhA-GF-ksf">
-                                <rect key="frame" x="16" y="78" width="288" height="128"/>
+                                <rect key="frame" x="16" y="34" width="288" height="128"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="XQt-Vw-59e"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kKI-s8-WDX">
-                                <rect key="frame" x="16" y="256" width="288" height="114"/>
+                                <rect key="frame" x="16" y="212" width="288" height="114"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="GOU-1y-lZ2">
                                         <rect key="frame" x="0.0" y="6.5" width="44" height="101"/>
@@ -127,11 +127,11 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZW-mB-d8n">
-                                <rect key="frame" x="120" y="432" width="80" height="34.5"/>
+                                <rect key="frame" x="120" y="388" width="80" height="34.5"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="DONE"/>
                                 <connections>
-                                    <action selector="doneButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="u80-MB-eyD"/>
+                                    <action selector="doneButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="yfV-Jg-A6w"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -170,7 +170,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QA5-nP-jmb" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vzp-r5-75s">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
